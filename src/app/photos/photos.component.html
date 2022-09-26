@@ -1,0 +1,9 @@
+<h4 class="mb-3 text-warning">Фото</h4>
+<div class="photos d-flex justify-content-between flex-wrap">
+  <img
+    *ngFor="let photo of photos; let i = index"
+    [src]="photo"
+    class="mb-3 rounded shadow"
+    alt="{{ photo + ' ' + i }}"
+  />
+</div>
